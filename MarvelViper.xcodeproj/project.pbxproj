@@ -1,0 +1,643 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		11847F68B8707A6088175F5A /* Pods_MarvelViper.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 22D780298E4820AF4633B152 /* Pods_MarvelViper.framework */; };
+		4420B6382789610400FA8CE8 /* ComicListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4420B6372789610400FA8CE8 /* ComicListTableViewController.swift */; };
+		4420B63B278961BB00FA8CE8 /* ComicCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4420B63A278961BB00FA8CE8 /* ComicCellViewModel.swift */; };
+		4420B63D2789686500FA8CE8 /* ComicListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4420B63C2789686500FA8CE8 /* ComicListViewModel.swift */; };
+		4420B63F27897CE500FA8CE8 /* CharacterDetailsRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4420B63E27897CE500FA8CE8 /* CharacterDetailsRouter.swift */; };
+		442C7E3027843F2000C243CA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 442C7E2F27843F2000C243CA /* AppDelegate.swift */; };
+		442C7E3227843F2000C243CA /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 442C7E3127843F2000C243CA /* SceneDelegate.swift */; };
+		442C7E3727843F2000C243CA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 442C7E3527843F2000C243CA /* Main.storyboard */; };
+		442C7E3927843F2400C243CA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 442C7E3827843F2400C243CA /* Assets.xcassets */; };
+		442C7E3C27843F2400C243CA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 442C7E3A27843F2400C243CA /* LaunchScreen.storyboard */; };
+		442C7E4527843F8C00C243CA /* CharacterListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 442C7E4427843F8C00C243CA /* CharacterListTableViewController.swift */; };
+		442C7E472784404400C243CA /* CharacterListPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 442C7E462784404400C243CA /* CharacterListPresenter.swift */; };
+		442C7E492784405000C243CA /* CharacterListInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 442C7E482784405000C243CA /* CharacterListInteractor.swift */; };
+		442C7E4D2784407000C243CA /* CharacterListConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 442C7E4C2784407000C243CA /* CharacterListConfigurator.swift */; };
+		44682CE22787209300E7861E /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44682CE12787209300E7861E /* DataManager.swift */; };
+		44A53DED27856BF9002FF9DC /* CharacterDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44A53DEC27856BF9002FF9DC /* CharacterDetailsViewController.swift */; };
+		44A53DF027856F8E002FF9DC /* CharacterImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44A53DEF27856F8E002FF9DC /* CharacterImageView.swift */; };
+		44A53DF4278570C0002FF9DC /* CharacterImageConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44A53DF3278570C0002FF9DC /* CharacterImageConfigurator.swift */; };
+		44A53DF627857191002FF9DC /* CharacterImagePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44A53DF527857191002FF9DC /* CharacterImagePresenter.swift */; };
+		44A53DF82785720A002FF9DC /* CharacterImageInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44A53DF72785720A002FF9DC /* CharacterImageInteractor.swift */; };
+		44A53DFD27857E17002FF9DC /* CharacterDetailsPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44A53DFC27857E17002FF9DC /* CharacterDetailsPresenter.swift */; };
+		44A53DFF27857E2A002FF9DC /* CharacterDetailsInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44A53DFE27857E2A002FF9DC /* CharacterDetailsInteractor.swift */; };
+		44A53E0127857E3C002FF9DC /* CharacterDetailsConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44A53E0027857E3C002FF9DC /* CharacterDetailsConfigurator.swift */; };
+		44A53E04278595C0002FF9DC /* CharacterTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44A53E03278595C0002FF9DC /* CharacterTableViewCell.swift */; };
+		44A53E0627859621002FF9DC /* CharacterCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44A53E0527859621002FF9DC /* CharacterCellViewModel.swift */; };
+		44F4DF28278ABFB800DC9301 /* ComicDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44F4DF27278ABFB800DC9301 /* ComicDetailsViewController.swift */; };
+		44F4DF2A278AC0D300DC9301 /* ComicDetailsPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44F4DF29278AC0D300DC9301 /* ComicDetailsPresenter.swift */; };
+		44F4DF2C278AC18700DC9301 /* ComicDetailsInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44F4DF2B278AC18700DC9301 /* ComicDetailsInteractor.swift */; };
+		44F4DF2E278AC1EF00DC9301 /* ComicDetailsRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44F4DF2D278AC1EF00DC9301 /* ComicDetailsRouter.swift */; };
+		44F4DF30278AC22900DC9301 /* ComicDetailsConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44F4DF2F278AC22900DC9301 /* ComicDetailsConfigurator.swift */; };
+		44F4DF33278AF4B400DC9301 /* CharacterSummaryCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44F4DF32278AF4B400DC9301 /* CharacterSummaryCellViewModel.swift */; };
+		44F6CFB42784C31A00F06F5D /* CharacterListRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44F6CFB32784C31A00F06F5D /* CharacterListRouter.swift */; };
+		44FC2BED27844E0E005B6BA1 /* Character.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44FC2BEC27844E0E005B6BA1 /* Character.swift */; };
+		44FC2BEF27844E3B005B6BA1 /* Image.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44FC2BEE27844E3B005B6BA1 /* Image.swift */; };
+		44FC2BF127844E75005B6BA1 /* Comic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44FC2BF027844E75005B6BA1 /* Comic.swift */; };
+		44FC2BF427845ECD005B6BA1 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44FC2BF327845ECD005B6BA1 /* NetworkManager.swift */; };
+		44FC2BF6278482BF005B6BA1 /* MarvelAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44FC2BF5278482BF005B6BA1 /* MarvelAPI.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		22D780298E4820AF4633B152 /* Pods_MarvelViper.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MarvelViper.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4420B6372789610400FA8CE8 /* ComicListTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComicListTableViewController.swift; sourceTree = "<group>"; };
+		4420B63A278961BB00FA8CE8 /* ComicCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComicCellViewModel.swift; sourceTree = "<group>"; };
+		4420B63C2789686500FA8CE8 /* ComicListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComicListViewModel.swift; sourceTree = "<group>"; };
+		4420B63E27897CE500FA8CE8 /* CharacterDetailsRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterDetailsRouter.swift; sourceTree = "<group>"; };
+		442C7E2C27843F2000C243CA /* MarvelViper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MarvelViper.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		442C7E2F27843F2000C243CA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		442C7E3127843F2000C243CA /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		442C7E3627843F2000C243CA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		442C7E3827843F2400C243CA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		442C7E3B27843F2400C243CA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		442C7E3D27843F2400C243CA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		442C7E4427843F8C00C243CA /* CharacterListTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterListTableViewController.swift; sourceTree = "<group>"; };
+		442C7E462784404400C243CA /* CharacterListPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterListPresenter.swift; sourceTree = "<group>"; };
+		442C7E482784405000C243CA /* CharacterListInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterListInteractor.swift; sourceTree = "<group>"; };
+		442C7E4C2784407000C243CA /* CharacterListConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterListConfigurator.swift; sourceTree = "<group>"; };
+		44682CE12787209300E7861E /* DataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
+		44A53DEC27856BF9002FF9DC /* CharacterDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterDetailsViewController.swift; sourceTree = "<group>"; };
+		44A53DEF27856F8E002FF9DC /* CharacterImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterImageView.swift; sourceTree = "<group>"; };
+		44A53DF3278570C0002FF9DC /* CharacterImageConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterImageConfigurator.swift; sourceTree = "<group>"; };
+		44A53DF527857191002FF9DC /* CharacterImagePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterImagePresenter.swift; sourceTree = "<group>"; };
+		44A53DF72785720A002FF9DC /* CharacterImageInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterImageInteractor.swift; sourceTree = "<group>"; };
+		44A53DFC27857E17002FF9DC /* CharacterDetailsPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterDetailsPresenter.swift; sourceTree = "<group>"; };
+		44A53DFE27857E2A002FF9DC /* CharacterDetailsInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterDetailsInteractor.swift; sourceTree = "<group>"; };
+		44A53E0027857E3C002FF9DC /* CharacterDetailsConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterDetailsConfigurator.swift; sourceTree = "<group>"; };
+		44A53E03278595C0002FF9DC /* CharacterTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterTableViewCell.swift; sourceTree = "<group>"; };
+		44A53E0527859621002FF9DC /* CharacterCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterCellViewModel.swift; sourceTree = "<group>"; };
+		44F4DF27278ABFB800DC9301 /* ComicDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComicDetailsViewController.swift; sourceTree = "<group>"; };
+		44F4DF29278AC0D300DC9301 /* ComicDetailsPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComicDetailsPresenter.swift; sourceTree = "<group>"; };
+		44F4DF2B278AC18700DC9301 /* ComicDetailsInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComicDetailsInteractor.swift; sourceTree = "<group>"; };
+		44F4DF2D278AC1EF00DC9301 /* ComicDetailsRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComicDetailsRouter.swift; sourceTree = "<group>"; };
+		44F4DF2F278AC22900DC9301 /* ComicDetailsConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComicDetailsConfigurator.swift; sourceTree = "<group>"; };
+		44F4DF32278AF4B400DC9301 /* CharacterSummaryCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterSummaryCellViewModel.swift; sourceTree = "<group>"; };
+		44F6CFB32784C31A00F06F5D /* CharacterListRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterListRouter.swift; sourceTree = "<group>"; };
+		44FC2BEC27844E0E005B6BA1 /* Character.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Character.swift; sourceTree = "<group>"; };
+		44FC2BEE27844E3B005B6BA1 /* Image.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Image.swift; sourceTree = "<group>"; };
+		44FC2BF027844E75005B6BA1 /* Comic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Comic.swift; sourceTree = "<group>"; };
+		44FC2BF327845ECD005B6BA1 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		44FC2BF5278482BF005B6BA1 /* MarvelAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarvelAPI.swift; sourceTree = "<group>"; };
+		7EEB1DD7E7E5F3E00242B20B /* Pods-MarvelViper.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MarvelViper.release.xcconfig"; path = "Target Support Files/Pods-MarvelViper/Pods-MarvelViper.release.xcconfig"; sourceTree = "<group>"; };
+		9ED235425FE4CA5B4E54FAB1 /* Pods-MarvelViper.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MarvelViper.debug.xcconfig"; path = "Target Support Files/Pods-MarvelViper/Pods-MarvelViper.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		442C7E2927843F2000C243CA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				11847F68B8707A6088175F5A /* Pods_MarvelViper.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		140A447E45BD5E4D590ED237 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				9ED235425FE4CA5B4E54FAB1 /* Pods-MarvelViper.debug.xcconfig */,
+				7EEB1DD7E7E5F3E00242B20B /* Pods-MarvelViper.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		4420B6342789604200FA8CE8 /* ComicList */ = {
+			isa = PBXGroup;
+			children = (
+				4420B6372789610400FA8CE8 /* ComicListTableViewController.swift */,
+				4420B63A278961BB00FA8CE8 /* ComicCellViewModel.swift */,
+				4420B63C2789686500FA8CE8 /* ComicListViewModel.swift */,
+			);
+			path = ComicList;
+			sourceTree = "<group>";
+		};
+		442C7E2327843F2000C243CA = {
+			isa = PBXGroup;
+			children = (
+				442C7E2E27843F2000C243CA /* MarvelViper */,
+				442C7E2D27843F2000C243CA /* Products */,
+				140A447E45BD5E4D590ED237 /* Pods */,
+				8024D7677C4607FD0537C5AB /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		442C7E2D27843F2000C243CA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				442C7E2C27843F2000C243CA /* MarvelViper.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		442C7E2E27843F2000C243CA /* MarvelViper */ = {
+			isa = PBXGroup;
+			children = (
+				444720A7278ABD5D00CDBD4E /* ComicDetails */,
+				4420B6342789604200FA8CE8 /* ComicList */,
+				442C7E4327843F2B00C243CA /* CharacterList */,
+				44A53DEB27856BC3002FF9DC /* CharactersDetails */,
+				44A53DEE27856F5D002FF9DC /* CharacterImage */,
+				44FC2BF227845EB1005B6BA1 /* Services */,
+				44FC2BEB27844DFE005B6BA1 /* Models */,
+				44A53DFA27857D30002FF9DC /* Supporting FIles */,
+				44A53DF927857D29002FF9DC /* Storyboards */,
+				44A53DFB27857D40002FF9DC /* Resources */,
+			);
+			path = MarvelViper;
+			sourceTree = "<group>";
+		};
+		442C7E4327843F2B00C243CA /* CharacterList */ = {
+			isa = PBXGroup;
+			children = (
+				44A53E022785943E002FF9DC /* CharacterCell */,
+				442C7E4427843F8C00C243CA /* CharacterListTableViewController.swift */,
+				442C7E462784404400C243CA /* CharacterListPresenter.swift */,
+				442C7E482784405000C243CA /* CharacterListInteractor.swift */,
+				442C7E4C2784407000C243CA /* CharacterListConfigurator.swift */,
+				44F6CFB32784C31A00F06F5D /* CharacterListRouter.swift */,
+			);
+			path = CharacterList;
+			sourceTree = "<group>";
+		};
+		444720A7278ABD5D00CDBD4E /* ComicDetails */ = {
+			isa = PBXGroup;
+			children = (
+				44F4DF27278ABFB800DC9301 /* ComicDetailsViewController.swift */,
+				44F4DF29278AC0D300DC9301 /* ComicDetailsPresenter.swift */,
+				44F4DF2B278AC18700DC9301 /* ComicDetailsInteractor.swift */,
+				44F4DF2D278AC1EF00DC9301 /* ComicDetailsRouter.swift */,
+				44F4DF2F278AC22900DC9301 /* ComicDetailsConfigurator.swift */,
+				44F4DF32278AF4B400DC9301 /* CharacterSummaryCellViewModel.swift */,
+			);
+			path = ComicDetails;
+			sourceTree = "<group>";
+		};
+		44A53DEB27856BC3002FF9DC /* CharactersDetails */ = {
+			isa = PBXGroup;
+			children = (
+				44A53DEC27856BF9002FF9DC /* CharacterDetailsViewController.swift */,
+				44A53DFC27857E17002FF9DC /* CharacterDetailsPresenter.swift */,
+				44A53DFE27857E2A002FF9DC /* CharacterDetailsInteractor.swift */,
+				44A53E0027857E3C002FF9DC /* CharacterDetailsConfigurator.swift */,
+				4420B63E27897CE500FA8CE8 /* CharacterDetailsRouter.swift */,
+			);
+			path = CharactersDetails;
+			sourceTree = "<group>";
+		};
+		44A53DEE27856F5D002FF9DC /* CharacterImage */ = {
+			isa = PBXGroup;
+			children = (
+				44A53DEF27856F8E002FF9DC /* CharacterImageView.swift */,
+				44A53DF527857191002FF9DC /* CharacterImagePresenter.swift */,
+				44A53DF72785720A002FF9DC /* CharacterImageInteractor.swift */,
+				44A53DF3278570C0002FF9DC /* CharacterImageConfigurator.swift */,
+			);
+			path = CharacterImage;
+			sourceTree = "<group>";
+		};
+		44A53DF927857D29002FF9DC /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				442C7E3527843F2000C243CA /* Main.storyboard */,
+				442C7E3A27843F2400C243CA /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		44A53DFA27857D30002FF9DC /* Supporting FIles */ = {
+			isa = PBXGroup;
+			children = (
+				442C7E3D27843F2400C243CA /* Info.plist */,
+				442C7E2F27843F2000C243CA /* AppDelegate.swift */,
+				442C7E3127843F2000C243CA /* SceneDelegate.swift */,
+			);
+			path = "Supporting FIles";
+			sourceTree = "<group>";
+		};
+		44A53DFB27857D40002FF9DC /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				442C7E3827843F2400C243CA /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		44A53E022785943E002FF9DC /* CharacterCell */ = {
+			isa = PBXGroup;
+			children = (
+				44A53E03278595C0002FF9DC /* CharacterTableViewCell.swift */,
+				44A53E0527859621002FF9DC /* CharacterCellViewModel.swift */,
+			);
+			path = CharacterCell;
+			sourceTree = "<group>";
+		};
+		44FC2BEB27844DFE005B6BA1 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				44FC2BEC27844E0E005B6BA1 /* Character.swift */,
+				44FC2BEE27844E3B005B6BA1 /* Image.swift */,
+				44FC2BF027844E75005B6BA1 /* Comic.swift */,
+				44FC2BF5278482BF005B6BA1 /* MarvelAPI.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		44FC2BF227845EB1005B6BA1 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				44FC2BF327845ECD005B6BA1 /* NetworkManager.swift */,
+				44682CE12787209300E7861E /* DataManager.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		8024D7677C4607FD0537C5AB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				22D780298E4820AF4633B152 /* Pods_MarvelViper.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		442C7E2B27843F2000C243CA /* MarvelViper */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 442C7E4027843F2400C243CA /* Build configuration list for PBXNativeTarget "MarvelViper" */;
+			buildPhases = (
+				6B8188AB165C27B27C1A9705 /* [CP] Check Pods Manifest.lock */,
+				442C7E2827843F2000C243CA /* Sources */,
+				442C7E2927843F2000C243CA /* Frameworks */,
+				442C7E2A27843F2000C243CA /* Resources */,
+				98B3E0F31E92A0D0ED7D1E9A /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MarvelViper;
+			productName = MarvelViper;
+			productReference = 442C7E2C27843F2000C243CA /* MarvelViper.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		442C7E2427843F2000C243CA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1310;
+				LastUpgradeCheck = 1310;
+				TargetAttributes = {
+					442C7E2B27843F2000C243CA = {
+						CreatedOnToolsVersion = 13.1;
+					};
+				};
+			};
+			buildConfigurationList = 442C7E2727843F2000C243CA /* Build configuration list for PBXProject "MarvelViper" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 442C7E2327843F2000C243CA;
+			productRefGroup = 442C7E2D27843F2000C243CA /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				442C7E2B27843F2000C243CA /* MarvelViper */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		442C7E2A27843F2000C243CA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				442C7E3C27843F2400C243CA /* LaunchScreen.storyboard in Resources */,
+				442C7E3927843F2400C243CA /* Assets.xcassets in Resources */,
+				442C7E3727843F2000C243CA /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		6B8188AB165C27B27C1A9705 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MarvelViper-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		98B3E0F31E92A0D0ED7D1E9A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MarvelViper/Pods-MarvelViper-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MarvelViper/Pods-MarvelViper-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MarvelViper/Pods-MarvelViper-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		442C7E2827843F2000C243CA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				44FC2BEF27844E3B005B6BA1 /* Image.swift in Sources */,
+				442C7E472784404400C243CA /* CharacterListPresenter.swift in Sources */,
+				44FC2BF6278482BF005B6BA1 /* MarvelAPI.swift in Sources */,
+				442C7E4D2784407000C243CA /* CharacterListConfigurator.swift in Sources */,
+				44A53DF627857191002FF9DC /* CharacterImagePresenter.swift in Sources */,
+				44682CE22787209300E7861E /* DataManager.swift in Sources */,
+				44F4DF2E278AC1EF00DC9301 /* ComicDetailsRouter.swift in Sources */,
+				44F4DF2A278AC0D300DC9301 /* ComicDetailsPresenter.swift in Sources */,
+				44A53DFD27857E17002FF9DC /* CharacterDetailsPresenter.swift in Sources */,
+				44FC2BF427845ECD005B6BA1 /* NetworkManager.swift in Sources */,
+				44A53DF027856F8E002FF9DC /* CharacterImageView.swift in Sources */,
+				44A53E04278595C0002FF9DC /* CharacterTableViewCell.swift in Sources */,
+				44F4DF28278ABFB800DC9301 /* ComicDetailsViewController.swift in Sources */,
+				44F6CFB42784C31A00F06F5D /* CharacterListRouter.swift in Sources */,
+				44A53DED27856BF9002FF9DC /* CharacterDetailsViewController.swift in Sources */,
+				44A53DF82785720A002FF9DC /* CharacterImageInteractor.swift in Sources */,
+				442C7E4527843F8C00C243CA /* CharacterListTableViewController.swift in Sources */,
+				442C7E3027843F2000C243CA /* AppDelegate.swift in Sources */,
+				4420B6382789610400FA8CE8 /* ComicListTableViewController.swift in Sources */,
+				442C7E492784405000C243CA /* CharacterListInteractor.swift in Sources */,
+				44F4DF2C278AC18700DC9301 /* ComicDetailsInteractor.swift in Sources */,
+				44FC2BF127844E75005B6BA1 /* Comic.swift in Sources */,
+				44A53E0127857E3C002FF9DC /* CharacterDetailsConfigurator.swift in Sources */,
+				442C7E3227843F2000C243CA /* SceneDelegate.swift in Sources */,
+				44A53E0627859621002FF9DC /* CharacterCellViewModel.swift in Sources */,
+				44A53DFF27857E2A002FF9DC /* CharacterDetailsInteractor.swift in Sources */,
+				4420B63B278961BB00FA8CE8 /* ComicCellViewModel.swift in Sources */,
+				44FC2BED27844E0E005B6BA1 /* Character.swift in Sources */,
+				4420B63D2789686500FA8CE8 /* ComicListViewModel.swift in Sources */,
+				44F4DF30278AC22900DC9301 /* ComicDetailsConfigurator.swift in Sources */,
+				44A53DF4278570C0002FF9DC /* CharacterImageConfigurator.swift in Sources */,
+				4420B63F27897CE500FA8CE8 /* CharacterDetailsRouter.swift in Sources */,
+				44F4DF33278AF4B400DC9301 /* CharacterSummaryCellViewModel.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		442C7E3527843F2000C243CA /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				442C7E3627843F2000C243CA /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		442C7E3A27843F2400C243CA /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				442C7E3B27843F2400C243CA /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		442C7E3E27843F2400C243CA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		442C7E3F27843F2400C243CA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		442C7E4127843F2400C243CA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9ED235425FE4CA5B4E54FAB1 /* Pods-MarvelViper.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "MarvelViper/Supporting Files/Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = vshapovalov.MarvelViper;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		442C7E4227843F2400C243CA /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7EEB1DD7E7E5F3E00242B20B /* Pods-MarvelViper.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "MarvelViper/Supporting Files/Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = vshapovalov.MarvelViper;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		442C7E2727843F2000C243CA /* Build configuration list for PBXProject "MarvelViper" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				442C7E3E27843F2400C243CA /* Debug */,
+				442C7E3F27843F2400C243CA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		442C7E4027843F2400C243CA /* Build configuration list for PBXNativeTarget "MarvelViper" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				442C7E4127843F2400C243CA /* Debug */,
+				442C7E4227843F2400C243CA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 442C7E2427843F2000C243CA /* Project object */;
+}
