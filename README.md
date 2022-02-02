@@ -3,8 +3,6 @@ Fetches the characters list using marvel developer API and the viper architectur
 
 ## Features:
 
-## Features:
-
 - ### Characters Screen and Detailed character screen
 
 <div>
